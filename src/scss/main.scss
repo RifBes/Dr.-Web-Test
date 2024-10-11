@@ -1,0 +1,58 @@
+@import '_variables.scss';
+@import '_header.scss';
+@import '_hero.scss';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  max-width: 1234px;
+  padding-inline: 32px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-top: 64px;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.btn {
+  color: #fff;
+  border-radius: 5px;
+  background-color: $color-primary-active;
+  border: none;
+  padding: 15px 32px;
+  font-size: 18px;
+  font-family: inherit;
+
+  &:hover {
+    background-color: $color-primary-hover;
+  }
+}
+
+.title {
+  font-size: 86px;
+  font-size: clamp(20px, 4.47vw, 86px);
+  font-weight: 900;
+}
+
+.img {
+  &-block {
+    img {
+      display: block;
+    }
+  }
+}
