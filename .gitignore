@@ -9,7 +9,11 @@
 dist
 node_modules
 maket
-app
+src
+
+package.json
+gulpfile.js
+package-lock.json
 
 
 .sass-cache
