@@ -1,0 +1,122 @@
+.about {
+  // .about-container
+  &-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+
+    @media (max-width: 768px) {
+      gap: 16px;
+    }
+
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
+
+    @media (max-width: 320px) {
+      gap: 12px;
+    }
+  }
+
+  // .about-item
+  &-item {
+    background-color: #f2f2f2;
+    border-radius: $border-radius;
+    padding: 64px;
+    position: relative;
+    height: 616px;
+    overflow: hidden;
+
+    @media (max-width: 768px) {
+      height: 656px;
+      padding: 32px;
+    }
+
+    @media (max-width: 480px) {
+      height: 328px;
+    }
+
+    @media (max-width: 320px) {
+      height: 210px;
+      padding: 24px;
+      border-radius: 16px;
+    }
+
+    &__title {
+      font-size: 32px;
+      font-weight: 600;
+
+      @media (max-width: 768px) {
+        font-size: 24px;
+      }
+
+      @media (max-width: 320px) {
+        font-size: 16px;
+      }
+    }
+
+    &__list {
+      margin-top: 13px;
+      color: $color-text-secondary;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+
+      ul {
+        list-style: none;
+      }
+    }
+
+    &__img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      &-first {
+        height: 318px;
+        width: 340px;
+
+        @media (max-width: 768px) {
+          height: clamp(208px, 41vw, 313px);
+          width: clamp(220px, 44vw, 335px);
+        }
+
+        @media (max-width: 480px) {
+          height: 208px;
+          width: 220px;
+          height: clamp(115px, 45vw, 204px);
+          width: clamp(115px, 45vw, 220px);
+        }
+
+        @media (max-width: 320px) {
+          height: 115px;
+          width: 115px;
+        }
+      }
+
+      &-second {
+        height: 340px;
+        width: 340px;
+
+        @media (max-width: 768px) {
+          height: clamp(250px, 43vw, 336px);
+          width: clamp(250px, 45vw, 344px);
+        }
+        @media (max-width: 480px) {
+          right: -5%;
+          bottom: -8%;
+          height: 250px;
+          width: 250px;
+          height: clamp(145px, 50vw, 250px);
+          width: clamp(135px, 50vw, 250px);
+        }
+
+        @media (max-width: 320px) {
+          height: 145px;
+          width: 135px;
+        }
+      }
+    }
+  }
+}

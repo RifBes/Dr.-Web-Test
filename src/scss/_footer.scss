@@ -1,0 +1,39 @@
+.footer {
+  background-color: $color-footer;
+  color: $color-footer-text;
+  font-size: 14px;
+  padding-block: 80px 64px;
+
+  @media (max-width: 480px) {
+    padding-block: 64px 48px;
+  }
+
+  @media (max-width: 320px) {
+    padding-block: 56px 40px;
+  }
+
+  // .footer-top
+  &-top {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  //   .footer-bottom
+  &-bottom {
+    margin-top: 12px;
+    width: 368px;
+
+    @media (max-width: 768px) {
+      width: 224px;
+    }
+
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+
+    @media (max-width: 320px) {
+      margin-top: 8px;
+    }
+  }
+}

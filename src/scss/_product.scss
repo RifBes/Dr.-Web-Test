@@ -1,0 +1,98 @@
+.product {
+  @media (max-width: 1234px) {
+    padding-inline: 32px;
+  }
+  @media (max-width: 480px) {
+    padding-inline: 16px;
+  }
+  @media (max-width: 390px) {
+    padding-inline: 0;
+  }
+  // .product-wrapper
+  &-wrapper {
+    background-color: $color-icon-primary;
+    border-radius: $border-radius;
+    color: #fff;
+    padding: 80px 100px;
+    padding-inline: clamp(64.5px, 5.5vw, 100px);
+    max-width: 1141px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 60px;
+    align-items: center;
+
+    @media (max-width: 920px) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      padding-inline: 64.5px;
+      gap: 80px;
+    }
+
+    @media (max-width: 480px) {
+      gap: 60px;
+      padding: 60px 24px;
+    }
+
+    @media (max-width: 320px) {
+      border-radius: 0;
+      padding: 40px 25px;
+      gap: 40px;
+    }
+  }
+
+  //   .product-title
+  &-title {
+    margin-top: 32px;
+  }
+
+  //   .product-description
+  &-description {
+    margin-top: 12px;
+
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
+  }
+
+  //   .product-link
+  &-link {
+    display: inline-block;
+    margin-top: 32px;
+    font-size: 16px;
+  }
+  //   .product-left
+  &-left {
+    @media (max-width: 768px) {
+      width: 89%;
+      margin-right: auto;
+    }
+
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+
+    &__include {
+      display: flex;
+      gap: 12px;
+      margin-top: 12px;
+
+      // .product-left__include-item
+      &-item {
+        border: 1px solid #fff;
+        border-radius: 80px;
+        padding: 8px 12px;
+        font-size: 18px;
+
+        @media (max-width: 320px) {
+          padding: 8px 11px;
+        }
+      }
+    }
+  }
+  //   TODO: переделать в стили для отдельного компонента
+  // .product-right
+  &-right {
+  }
+}

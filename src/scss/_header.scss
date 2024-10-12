@@ -1,8 +1,29 @@
 .header {
-  padding-block: 104px 32px;
+  padding-block: 104px 25px;
+  padding-top: clamp(40px, 11.2vw, 104px);
 
+  @media (max-width: 480px) {
+    padding-top: 48px;
+  }
+
+  @media (max-width: 320px) {
+    padding-block: 40px 33px;
+  }
+
+  // .header-wrapper
   &-wrapper {
     display: flex;
     justify-content: center;
+  }
+
+  // .header-logo
+  &-logo {
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    @media (max-width: 320px) {
+      height: 30px;
+    }
   }
 }
