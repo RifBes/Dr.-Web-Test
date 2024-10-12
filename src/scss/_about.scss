@@ -20,7 +20,7 @@
 
   // .about-item
   &-item {
-    background-color: #f2f2f2;
+    background-color: $color-bg-secondary;
     border-radius: $border-radius;
     padding: 64px;
     position: relative;
@@ -42,6 +42,7 @@
       border-radius: 16px;
     }
 
+    // .about-item__title
     &__title {
       font-size: 32px;
       font-weight: 600;
@@ -55,6 +56,7 @@
       }
     }
 
+    // .about-item__list
     &__list {
       margin-top: 13px;
       color: $color-text-secondary;
@@ -68,11 +70,13 @@
       }
     }
 
+    // .about-item__img
     &__img {
       position: absolute;
       bottom: 0;
       right: 0;
 
+      // .about-item__img-first
       &-first {
         height: 318px;
         width: 340px;
@@ -83,8 +87,6 @@
         }
 
         @media (max-width: 480px) {
-          height: 208px;
-          width: 220px;
           height: clamp(115px, 45vw, 204px);
           width: clamp(115px, 45vw, 220px);
         }
@@ -95,6 +97,7 @@
         }
       }
 
+      // .about-item__imf-second
       &-second {
         height: 340px;
         width: 340px;
@@ -103,11 +106,10 @@
           height: clamp(250px, 43vw, 336px);
           width: clamp(250px, 45vw, 344px);
         }
+
         @media (max-width: 480px) {
           right: -5%;
           bottom: -8%;
-          height: 250px;
-          width: 250px;
           height: clamp(145px, 50vw, 250px);
           width: clamp(135px, 50vw, 250px);
         }

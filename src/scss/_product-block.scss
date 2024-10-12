@@ -26,10 +26,6 @@
       line-height: 30px;
       font-weight: 500;
 
-      @media (max-width: 480px) {
-        font-size: 24px;
-      }
-
       @media (max-width: 320px) {
         font-size: 20px;
       }
@@ -37,7 +33,7 @@
 
     // .product-block__bottom-description
     &-description {
-      color: #666666;
+      color: $color-text-secondary;
       font-size: 16px;
       margin-top: 8px;
     }
@@ -47,7 +43,7 @@
       font-weight: 700;
 
       span {
-        color: #b3b3b3;
+        color: $color-text-gray;
         font-size: 18px;
         line-height: 24px;
         font-weight: 600;
@@ -72,6 +68,7 @@
     }
   }
 
+  // .product-block__btn
   &__btn {
     margin-top: 24px;
     width: 100%;

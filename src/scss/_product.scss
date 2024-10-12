@@ -35,8 +35,11 @@
       padding: 60px 24px;
     }
 
-    @media (max-width: 320px) {
+    @media (max-width: 400px) {
       border-radius: 0;
+    }
+
+    @media (max-width: 320px) {
       padding: 40px 25px;
       gap: 40px;
     }
@@ -73,6 +76,7 @@
       width: 100%;
     }
 
+    //   .product-left__include
     &__include {
       display: flex;
       gap: 12px;
@@ -90,9 +94,5 @@
         }
       }
     }
-  }
-  //   TODO: переделать в стили для отдельного компонента
-  // .product-right
-  &-right {
   }
 }

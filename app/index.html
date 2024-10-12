@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Скидка 20% на Dr.Web Security Space (для Android)</title>
+    <meta
+      name="description"
+      content="С 1 по 15 февраля 2024 года скидка 20% на Dr.Web Security Space для Android, 2 устройства на 1 год всего за 784 руб."
+    />
+    <meta name="keywords" content="dr.web promo, dr.web android" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -10,12 +17,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <title>Скидка 20% на Dr.Web Security Space (для Android)</title>
-    <meta
-      name="description"
-      content="С 1 по 15 февраля 2024 года скидка 20% на Dr.Web Security Space для Android, 2 устройства на 1 год всего за 784 руб."
-    />
-    <meta name="keywords" content="dr.web promo, dr.web android" />
   </head>
 
   <body>
@@ -44,7 +45,7 @@
           <div class="hero-text">
             <p>с Dr.Web Security Space для Android</p>
           </div>
-          <a href="#product" class="btn hero-btn">Купить со скидкой</a>
+          <a href="#anchor-product" class="btn hero-btn">Купить со скидкой</a>
         </div>
         <div class="hero-bottom">
           <div class="hero-bottom__image-phone img-block">
@@ -60,7 +61,7 @@
       </div>
     </section>
 
-    <section class="section product" id="product">
+    <section class="section product" id="anchor-product">
       <div class="product-wrapper">
         <div class="product-left">
           <span class="text-green">С 1 по 15 февраля 2023 года</span>
@@ -131,7 +132,13 @@
                 </div>
                 <div class="product-block__bottom-price-add">без НДС</div>
               </div>
-              <button class="btn product-block__btn">Купить со скидкой</button>
+              <button
+                class="btn product-block__btn"
+                data-src="#modal"
+                data-fancybox=""
+              >
+                Купить со скидкой
+              </button>
             </div>
           </div>
         </div>
@@ -283,5 +290,23 @@
       </div>
     </footer>
     <script src="./assets/js/main.js"></script>
+    <script defer src="./assets/js/vendor.js"></script>
   </body>
 </html>
+
+<div id="modal" class="modal modal_small" style="display: none">
+  <div class="modal__container">
+    <div class="modal__title">Купить со скидкой</div>
+    <form class="modal__form" action="#">
+      <div class="input_field">
+        <label for="name">Ваше имя</label>
+        <input id="name" type="text" />
+      </div>
+      <div class="input_field">
+        <label for="tel">Телефон</label>
+        <input id="tel" type="tel" />
+      </div>
+      <button class="btn modal__btn" type="submit">Отправить</button>
+    </form>
+  </div>
+</div>

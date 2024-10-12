@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const allLinks = document.querySelectorAll('a[href^="#"]');
+  Fancybox.bind("[data-fancybox]", {
+    autoFocus: false,
+  });
+
+  const allLinks = document.querySelectorAll('a[href^="#anchor-"]');
 
   for (let link of allLinks) {
     link.addEventListener("click", function (e) {
